@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Terms of Use | TLNTX Consultancy</title>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial"] },
+          boxShadow: {
+            soft: "0 18px 50px rgba(2, 6, 23, .10)",
+            soft2: "0 10px 30px rgba(2, 6, 23, .08)"
+          },
+          borderRadius: { xl2: "1.25rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    body { background: #f7f8fb; }
+    .hairline { border-color: rgba(15, 23, 42, .12); }
+    .btn-primary { background:#0b1220; color:#fff; }
+    .btn-primary:hover { background:#0f1a30; }
+    .btn-secondary { background:#fff; border:1px solid rgba(15,23,42,.14); }
+    .btn-secondary:hover { background:#f4f6fa; }
+    .pill { border:1px solid rgba(15,23,42,.12); background:#fff; }
+    .bg-hero {
+      background:
+        radial-gradient(1200px 600px at 20% 20%, rgba(59,130,246,.10), transparent 60%),
+        radial-gradient(900px 500px at 85% 10%, rgba(14,165,233,.10), transparent 60%),
+        radial-gradient(900px 600px at 70% 90%, rgba(16,185,129,.08), transparent 60%),
+        linear-gradient(#ffffff, #f7f8fb);
+    }
+  </style>
+
+</head>
+<body class="text-slate-900">
+  
+<header class="sticky top-0 z-50 border-b hairline bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between gap-4">
+    <a href="/index.html" class="flex items-center gap-3">
+      <img src="/assets/tlntx-logo.png" alt="TLNTX Consultancy" class="h-10 w-auto" />
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-1">
+      <div class="relative">
+        <button data-dd="programs" class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium">Programs</button>
+        <div data-dd-panel="programs" class="hidden absolute left-0 mt-2 w-80 rounded-2xl border hairline bg-white shadow-soft2 p-2">
+          <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html#software">Software Development</a>
+          <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html#data">Data Analytics / ML</a>
+          <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html#ba">Business Analytics</a>
+          <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html#de">Data Engineering</a>
+          <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html#placements">Placement-Only</a>
+        </div>
+      </div>
+
+      <a class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium" href="/placement-plan.html">Placement Plan</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium" href="/resources.html">Resources</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium" href="/faq.html">FAQs</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium" href="/refer.html">Refer & Earn</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-slate-50 font-medium" href="/comparisons.html">Comparisons</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-2">
+      <a href="/index.html#lead" class="px-4 py-2 rounded-xl btn-primary font-semibold">Book a Call</a>
+    </div>
+
+    <button id="mobileBtn" class="lg:hidden p-2 rounded-xl hover:bg-slate-50" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobileDrawer" class="hidden lg:hidden border-t hairline bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-4 space-y-2">
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/programs.html">Programs</a>
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/placement-plan.html">Placement Plan</a>
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/resources.html">Resources</a>
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/faq.html">FAQs</a>
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/refer.html">Refer & Earn</a>
+      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="/comparisons.html">Comparisons</a>
+      <a class="block px-3 py-2 rounded-xl btn-primary font-semibold text-center" href="/index.html#lead">Inquire Now</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Dropdowns (desktop)
+  const ddButtons = document.querySelectorAll("[data-dd]");
+  const ddPanels = document.querySelectorAll("[data-dd-panel]");
+  function closeAllDD(){ ddPanels.forEach(p=>p.classList.add("hidden")); }
+  ddButtons.forEach(btn=>{
+    btn.addEventListener("click",(e)=>{
+      e.stopPropagation();
+      const key = btn.getAttribute("data-dd");
+      const panel = document.querySelector(`[data-dd-panel="${key}"]`);
+      const isOpen = panel && !panel.classList.contains("hidden");
+      closeAllDD();
+      if(panel && !isOpen) panel.classList.remove("hidden");
+    });
+  });
+  document.addEventListener("click", closeAllDD);
+
+  // Mobile drawer
+  const mobileBtn = document.getElementById("mobileBtn");
+  const mobileDrawer = document.getElementById("mobileDrawer");
+  if(mobileBtn && mobileDrawer){
+    mobileBtn.addEventListener("click", ()=> mobileDrawer.classList.toggle("hidden"));
+  }
+</script>
+
+  <main class="mx-auto max-w-7xl px-4 py-12">
+    
+<div class="max-w-3xl">
+  <h1 class="text-4xl font-extrabold tracking-tight">Terms of Use</h1>
+</div>
+<div class="mt-8 max-w-4xl rounded-3xl border hairline bg-white p-8 shadow-soft2 prose max-w-none">
+  <p><strong>Template only.</strong> Replace with your real terms.</p>
+</div>
+
+  </main>
+  
+<footer class="bg-white border-t hairline">
+  <div class="mx-auto max-w-7xl px-4 py-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="/assets/tlntx-logo.png" alt="TLNTX Consultancy" class="h-10 w-auto" />
+        <p class="mt-3 text-slate-600">
+          TLNTX helps early‑career and international talent sharpen interviews and build credible portfolios.
+        </p>
+      </div>
+
+      <div>
+        <div class="font-bold">Company</div>
+        <div class="mt-3 grid gap-2 text-slate-600">
+          <a href="/programs.html" class="hover:underline">Programs</a>
+          <a href="/placement-plan.html" class="hover:underline">Placement Plan</a>
+          <a href="/refer.html" class="hover:underline">Referral Program</a>
+          <a href="/comparisons.html" class="hover:underline">Comparisons</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-bold">Resources</div>
+        <div class="mt-3 grid gap-2 text-slate-600">
+          <a href="/resources.html#webinar" class="hover:underline">Webinar</a>
+          <a href="/resources.html#blogs" class="hover:underline">Guides</a>
+          <a href="/refund-policy.html" class="hover:underline">Refund Policy</a>
+          <a href="/faq.html" class="hover:underline">FAQs</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-bold">Contact</div>
+        <div class="mt-3 grid gap-2 text-slate-600">
+          <div><span class="font-semibold">Email:</span> hello@tlntx.pro</div>
+          <div><span class="font-semibold">Remote:</span> Wyoming registered • global operations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-6 border-t hairline flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500">
+      <div>© <span id="year"></span> TLNTX Consultancy. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="/privacy.html" class="hover:underline">Privacy</a>
+        <a href="/terms.html" class="hover:underline">Terms</a>
+        <a href="/cookies.html" class="hover:underline">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
